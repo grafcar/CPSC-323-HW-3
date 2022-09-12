@@ -1,5 +1,0 @@
-rint(value[0] == "_")
-    print(value[0].isalpha())
-    print(value[1] == "_")
-    print(value[1].isalpha())
-    print(value[1].isnumeric())

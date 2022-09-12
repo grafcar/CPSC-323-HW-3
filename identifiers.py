@@ -55,6 +55,5 @@ while row < len(items)+1:
         col += 1
     row += 1
     col = 1
-    #print(result[row])
     
 printArray(result)
