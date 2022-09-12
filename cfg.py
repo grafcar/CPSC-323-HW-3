@@ -6,7 +6,7 @@ def S (value):
     elif value[0] == "c":
         return C(value[1:])
     elif value[0] == "$":
-        print("Accepted")
+        print("Rejected by S")
         return
 
 def B (value):
@@ -16,8 +16,8 @@ def B (value):
         return C(value[1:])
     elif value[0] == "c":
         return D(value[1:])
-    else: 
-        print("Ended B")
+    elif value[0] == "$":
+        print("Accepted by B")
         return 
 
 def C(value):
@@ -27,8 +27,8 @@ def C(value):
         return D(value[1:])
     elif value[0] == "c":
         return D(value[1:])
-    else:
-        print("Ended C")
+    elif value[0] == "$":
+        print("Accepted by C")
         return 
 
 def D(value):
@@ -38,8 +38,8 @@ def D(value):
         return B(value[1:])
     elif value[0] == "c":
         return C(value[1:])
-    else:
-        print("Ended D")
+    elif value[0] == "$":
+        print("Rejected by D")
         return 
 
-S("ccccbbb$")
+S("abbbcaaa$")
